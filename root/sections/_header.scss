@@ -1,0 +1,70 @@
+@use '../variaveis';
+.cabecalho {
+    background-image: url('/img/background.png');    
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+    text-align: center;
+    height: 300px;    
+    h2 {
+        font-size: 2rem;
+        margin: 3rem 1rem 3rem 1rem;
+    }
+    .cabecalho__botao {
+        text-decoration: none;
+        color: variaveis.$cor-texto-secundaria;
+        background: variaveis.$cor-destaque;
+        border-radius: 1.87rem;
+        padding: 0.5rem;
+        position: relative;
+        top: 50px;
+    }
+}
+.cabecalho__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 0;  
+    margin: 0 0.62rem;    
+    h1 {
+        font-size: 0.62rem;        
+        text-align: center;
+        strong {
+            color: variaveis.$cor-destaque;
+        }
+    }    
+}
+.container__menu {  
+    position: relative;
+    input {
+        display: none;        
+        &:checked ~ ul {
+            display: block;             
+        }
+    }
+    span {
+        background-image: url(/img/menu.svg);
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 1.5rem;
+        width: 1.5rem;        
+    }  
+       
+}
+ul {
+    background: variaveis.$cor-destaque;
+    border-radius: 0.62rem;
+    display: none;    
+    position: absolute;        
+    top: 100%;     
+    right: 0.06rem;         
+    li {
+        text-align: left;
+        padding: 0.5rem;
+        a {
+            text-decoration: none;
+            color: variaveis.$cor-texto-secundaria;
+        }
+    }    
+}

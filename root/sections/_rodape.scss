@@ -1,0 +1,29 @@
+@use '../variaveis';
+
+.rodape {
+    margin: 3rem 0 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1.87rem;    
+    ol {
+        text-align: center;        
+        font-size: 0.62rem;
+        li {
+            line-height: 1rem;
+            a {
+                text-decoration: none;
+                color: variaveis.$cor-destaque;
+            }
+        }
+    }
+}
+.container__contatos {
+    h5 {
+        margin-top: 1rem;
+    }
+    a {
+        text-decoration: none;
+        color: variaveis.$cor-texto-primaria;
+    }
+}

@@ -1,0 +1,22 @@
+@use '../variaveis';
+
+.modalidades {
+    @include variaveis.margem-secao;
+    ol {
+        display: flex;        
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.25rem;
+        li {            
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            column-gap: 0.62rem;
+        }
+    }
+    p {
+        margin-top: 1.25rem;
+        text-align: center;
+        color: variaveis.$cor-destaque;
+    }
+}

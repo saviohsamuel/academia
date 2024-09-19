@@ -1,0 +1,16 @@
+//Cores
+    $background: #000000;
+    $cor-texto-primaria: #ffffff;
+    $cor-texto-secundaria: #000000;
+    $cor-destaque: #FAFF00;
+    $cor-cards: #222222;
+//Fonte
+    $fonte-primaria: 'Zen Dots';
+
+//Mixins
+    @mixin margem-secao {
+        margin: 12.5rem 0.62rem 0 0.62rem;
+    }
+    @mixin margem-titulo{
+        margin-bottom: 2.5rem;
+    }

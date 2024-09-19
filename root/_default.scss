@@ -1,0 +1,30 @@
+@use '../root/variaveis';
+
+body {
+    background: variaveis.$background;    
+    color: variaveis.$cor-texto-primaria;
+    font-family: variaveis.$fonte-primaria;
+    font-size: 0.87rem;
+    font-weight: 400; 
+    position: relative;   
+    h3 {
+        @include variaveis.margem-titulo;
+        font-size: 1.75rem;
+        text-align: center;        
+    }   
+}
+.whatsapp {        
+    font-size: 0.62rem;
+    text-decoration: none;
+    color: green;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    position:fixed;
+    right: 10px;
+    bottom: 40px;    
+    img {
+        width: 40px;
+    }       
+}

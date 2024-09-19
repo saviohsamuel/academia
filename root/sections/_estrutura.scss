@@ -1,0 +1,48 @@
+@use '../variaveis';
+
+.estrutura {    
+    @include variaveis.margem-secao;
+    .estrutura__texto {        
+        text-align: center;
+        line-height: 1rem;
+    }
+}
+.swiper {
+    margin-top: 0.62rem;    
+    .swiper-slide {     
+        img {        
+            width: 100%;            
+            border-radius: 0.62rem;            
+        }
+    }
+    .swiper-scrollbar {    
+        padding: 0.1rem;
+        background: variaveis.$cor-destaque;
+    }
+}
+.container__sobre {
+    margin: 3rem 1rem;    
+    ol {
+        margin: 0.62rem 0 0 3.75rem;
+        li {           
+            line-height: 1.2rem;
+        }
+    }
+    div {        
+        display: grid;
+        align-items: self-end;        
+        grid-template-columns: 3.12rem 1fr;
+        column-gap: 0.62rem;        
+        img {            
+            width:3.12rem;
+            grid-column: 1/2;
+        }        
+        h4 {
+            grid-column: 2/3;
+            font-size: 1.12rem;
+        }
+    }
+    p {
+        margin: 0.62rem 0 0 3.75rem;
+    }
+}

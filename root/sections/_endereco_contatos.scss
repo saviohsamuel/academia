@@ -1,0 +1,40 @@
+@use '../variaveis';
+
+.endeEcont {    
+    @include variaveis.margem-secao;
+}
+.container__endeEcont {
+    display: flex;    
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+.container__mapa {
+    background: variaveis.$cor-cards;
+    border-radius: 0.93rem;
+    text-align: center;
+    iframe {
+        width: 80%;
+        max-width: 80%;
+        padding: 0.31rem;
+        border-radius: 0.93rem;
+    }
+    p {
+        padding: 0.62rem;
+        line-height: 1.2rem;        
+    } 
+}
+.container__contatos {
+    margin: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ol {
+        margin: 0.62rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin: 0 0.62rem;
+        }
+    }
+}

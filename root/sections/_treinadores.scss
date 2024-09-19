@@ -1,0 +1,5 @@
+@use '../variaveis';
+
+.treinadores {
+    @include variaveis.margem-secao;
+}
